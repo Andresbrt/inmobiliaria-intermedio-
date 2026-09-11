@@ -2083,3 +2083,21 @@ h1, h2, h3, h4 {
     display: none;
   }
 }
+
+/* ==========================================
+   MARCA DE AGUA DIAGONAL
+   ========================================== */
+.watermark-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  user-select: none;
+  z-index: 99999;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 340px 200px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='200' viewBox='0 0 340 200'%3E%3Ctext x='170' y='100' fill='%230b2038' fill-opacity='0.13' stroke='%23ffffff' stroke-opacity='0.22' stroke-width='0.75' font-family='Montserrat, Inter, sans-serif' font-size='18' font-weight='800' letter-spacing='4' text-anchor='middle' transform='rotate(-26 170 100)'%3EANDRES BERMUDEZ%3C/text%3E%3C/svg%3E");
+}
